@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.5](https://github.com/jimeh/tab-bar-notch/compare/v0.0.4...v0.0.5) (2023-11-16)
+
+
+### Bug Fixes
+
+* **release:** ensure version is correctly bumped in release PRs ([#2](https://github.com/jimeh/tab-bar-notch/issues/2)) ([2cbc50b](https://github.com/jimeh/tab-bar-notch/commit/2cbc50ba45eb4bc4792e4d61e4201f000b75b517))
+
 ## [0.0.4](https://github.com/jimeh/tab-bar-notch/compare/v0.0.3...v0.0.4) (2023-11-16)
 
 
