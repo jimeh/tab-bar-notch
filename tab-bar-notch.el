@@ -4,7 +4,9 @@
 ;; URL: https://github.com/jimeh/tab-bar-notch
 ;; Package-Requires: ((emacs "27.1"))
 ;; Keywords: convenience, hardware
-;; Version: 0.0.4
+;; x-release-please-start-version
+;; Version: 0.0.3
+;; x-release-please-end
 
 ;; This file is not part of GNU Emacs.
 
