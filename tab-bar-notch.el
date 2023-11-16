@@ -5,7 +5,7 @@
 ;; Package-Requires: ((emacs "27.1"))
 ;; Keywords: convenience, hardware
 ;; x-release-please-start-version
-;; Version: 0.0.3
+;; Version: 0.0.5
 ;; x-release-please-end
 
 ;; This file is not part of GNU Emacs.
