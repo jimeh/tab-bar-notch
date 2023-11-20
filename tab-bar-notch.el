@@ -159,7 +159,7 @@ terminal."
   (if (not window-system)
       " "
     (if (not (memq 'tab-bar-notch-adjust-height window-size-change-functions))
-        (add-hook 'window-size-change-functions 'tab-bar-notch-adjust-height))
+        (add-hook 'window-size-change-functions #'tab-bar-notch-adjust-height))
 
     (propertize " " 'face (tab-bar-notch--face-name))))
 
@@ -177,7 +177,7 @@ If `tab-bar-notch-spacer' is not included in `tab-bar-format', this
 function will remove itself from `window-size-change-functions'."
   (if (not (memq 'tab-bar-notch-spacer tab-bar-format))
       ;; Remove hook if notch spacer is not included in tab-bar-format.
-      (remove-hook 'window-size-change-functions 'tab-bar-notch-adjust-height))
+      (remove-hook 'window-size-change-functions #'tab-bar-notch-adjust-height))
 
   (let* ((face-name (tab-bar-notch--face-name frame))
          (current-height (face-attribute face-name :height frame))
