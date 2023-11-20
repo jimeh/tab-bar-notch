@@ -10,18 +10,12 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/jimeh/tab-bar-notch/releases">
-    <img src="https://img.shields.io/github/v/tag/jimeh/tab-bar-notch?label=release" alt="GitHub tag (latest SemVer)">
-  </a>
-  <a href="https://github.com/jimeh/tab-bar-notch/issues">
-    <img src="https://img.shields.io/github/issues-raw/jimeh/tab-bar-notch.svg?style=flat&logo=github&logoColor=white" alt="GitHub issues">
-  </a>
-  <a href="https://github.com/jimeh/tab-bar-notch/pulls">
-    <img src="https://img.shields.io/github/issues-pr-raw/jimeh/tab-bar-notch.svg?style=flat&logo=github&logoColor=white" alt="GitHub pull requests">
-  </a>
-  <a href="https://github.com/jimeh/tab-bar-notch/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/jimeh/tab-bar-notch.svg?style=flat" alt="License Status">
-  </a>
+  <a href="https://github.com/jimeh/tab-bar-notch/releases"><img src="https://img.shields.io/github/v/tag/jimeh/tab-bar-notch?label=release" alt="GitHub tag (latest SemVer)"></a>
+  <a href="https://stable.melpa.org/#/tab-bar-notch"><img alt="MELPA Stable" src="https://stable.melpa.org/packages/tab-bar-notch-badge.svg"/></a>
+  <a href="https://melpa.org/#/tab-bar-notch"><img alt="MELPA" src="https://melpa.org/packages/tab-bar-notch-badge.svg"/></a>
+  <a href="https://github.com/jimeh/tab-bar-notch/issues"><img src="https://img.shields.io/github/issues-raw/jimeh/tab-bar-notch.svg?style=flat&logo=github&logoColor=white" alt="GitHub issues"></a>
+  <a href="https://github.com/jimeh/tab-bar-notch/pulls"><img src="https://img.shields.io/github/issues-pr-raw/jimeh/tab-bar-notch.svg?style=flat&logo=github&logoColor=white" alt="GitHub pull requests"></a>
+  <a href="https://github.com/jimeh/tab-bar-notch/blob/main/LICENSE"><img src="https://img.shields.io/github/license/jimeh/tab-bar-notch.svg?style=flat" alt="License Status"></a>
 </p>
 
 When using the non-native fullscreen mode of Emacs on modern MacBook Pro
@@ -52,11 +46,12 @@ notch however, so it does not know to avoid rendering things behind it.
 
 ## Installation
 
-### use-package + straight.el
+`tab-bar-notch` is available via [MELPA](https://melpa.org/).
+
+### use-package
 
 ```elisp
-(use-package tab-bar-notch
-  :straight (:host github :repo "jimeh/tab-bar-notch"))
+(use-package tab-bar-notch)
 ```
 
 ### Manual
