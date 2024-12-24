@@ -197,15 +197,17 @@ The assigned face name for each frame is stored in a frame
 parameter."
   (let* ((frame (or frame (selected-frame)))
          (face-name (frame-parameter frame 'tab-bar-notch--face-name)))
-    (if face-name
-        face-name
+    (when (not face-name)
       (setq face-name (intern (format "tab-bar-notch--face-%d"
                                       tab-bar-notch--next-face-id))
-            tab-bar-notch--next-face-id (1+ tab-bar-notch--next-face-id))
+            tab-bar-notch--next-face-id (1+ tab-bar-notch--next-face-id)))
+
+    (when (not (facep face-name))
       (make-face face-name)
       (set-face-attribute face-name nil :height 1.0)
-      (set-frame-parameter frame 'tab-bar-notch--face-name face-name)
-      face-name)))
+      (set-frame-parameter frame 'tab-bar-notch--face-name face-name))
+
+    face-name))
 
 (defun tab-bar-notch--notch-height (width height)
   "Return the notch height for the given screen WIDTH and HEIGHT.
