@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.7](https://github.com/jimeh/tab-bar-notch/compare/v0.0.6...v0.0.7) (2024-12-24)
+
+
+### Bug Fixes
+
+* **setup:** correctly re-setup tab-bar-notch if needed ([1e4b504](https://github.com/jimeh/tab-bar-notch/commit/1e4b5040dd863902658987d15740157fbff69c89))
+
 ## [0.0.6](https://github.com/jimeh/tab-bar-notch/compare/v0.0.5...v0.0.6) (2023-11-20)
 
 
